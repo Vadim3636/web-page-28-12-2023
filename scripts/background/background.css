@@ -1,0 +1,20 @@
+/* Background Container */
+/* (Full-Screen Example) */
+#background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+/* (Preset Size Example) */
+/* #background {
+  position: relative;
+  width: 300px;
+  height: 150px;
+} */
+
+/* Background */
+#bg {
+  position: absolute;
+  inset: 0;
+}
+/* asdsd */
