@@ -14,18 +14,17 @@ cards {
 	display: grid;
 	place-items: center;
 	min-height: 100vh;
-    height: 100vh;
 	font-family:  'Geist Sans', sans-serif, system-ui;
     width: 100vw;
     overflow-x: hidden;
     font-weight: 80;
-    /* background: hsl(0 0% 8%); */
+  /* background: hsl(0 0% 8%); */
 }
 
 cards ul {
 	--width: 100vw;
 	width: var(--width);
-	height: 0vh;
+	height: 100vh;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -48,29 +47,29 @@ cards ul li article {
 	background: var(--surface-4);
 	position: relative;
 	overflow: hidden;
-    border-radius: var(--radius-3);
-    box-shadow:
+  border-radius: var(--radius-3);
+  box-shadow:
     var(--shadow-5),
     0 1px inset white;
 }
 
 cards ul li article::before {
-    content: "";
-    pointer-events: none;
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    border-radius: var(--radius-3);
-    border: 6px solid hsl(0 0% 100% / 0.1);
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: var(--radius-3);
+  border: 6px solid hsl(0 0% 100% / 0.1);
 }
 
 /* .backdrop { */
 cards ul li article::after{
-    content: "";
-    z-index: -1;
+  content: "";
+  z-index: -1;
 	position: absolute;
 	inset: 0;
-    filter: grayscale(0.5);
+  filter: grayscale(0.5);
 	background-image: var(--bg);
 	background-size: 200% 200%;
 	background-position: 0% 50%;
