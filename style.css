@@ -1,0 +1,10 @@
+*{
+    color: #fff;
+}
+
+#bg-container{
+    /* width: 10px; */
+    z-index: -1;
+    opacity: 1;
+    /* overflow: hidden; */
+}
