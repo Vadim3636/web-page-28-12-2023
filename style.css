@@ -3,6 +3,7 @@
 }
 
 #bg-container{
+    /* position: static; */
     /* width: 10px; */
     z-index: -1;
     opacity: 1;
