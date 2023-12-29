@@ -2,6 +2,12 @@
     color: #fff;
 }
 
+#brightness{
+    margin-left: 5vw;
+    margin-top: 5vh;
+    width: 90vw;
+}
+
 #bg-container{
     /* position: static; */
     /* width: 10px; */

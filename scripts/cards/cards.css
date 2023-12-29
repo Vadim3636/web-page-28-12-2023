@@ -11,7 +11,8 @@
 }
 
 *{
-    --card-size: 50vmin;
+    --card-size: 30vmax;
+    --height: 50vmax;
 }
 
 cards {
@@ -28,7 +29,7 @@ cards {
 cards ul {
 	--width: 100vw;
 	width: var(--width);
-	height: 80vh;
+	height: var(--height);
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
