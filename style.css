@@ -23,7 +23,7 @@ html{
 
 @media (aspect-ratio > 9/16) {
     *{
-        color: #f0f;
+        /* color: #f0f; */
     }
     body{
         width: 56.25vh;
@@ -42,4 +42,13 @@ cards{
 
 cards ul{
     overflow-x: hidden;
+}
+
+h1{
+    font-size: 5vh;
+    text-align: center;
+}
+
+hr{
+    margin: 10px;
 }

@@ -1,6 +1,17 @@
-var viewMode = getCookie("view-mode");
-if(viewMode == "desktop"){
-    viewport.setAttribute('content', 'width=1024');
-}else if (viewMode == "mobile"){
-    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
-}
+range_periods = document.querySelectorAll(".range");
+
+range_periods.forEach(range_period => {
+
+    left = range_period.querySelector("input[type='button'].left");
+    left.onclick = function() {
+        r = range_period.querySelector("input[type='range']");
+        r.value = parseInt(r.value) - 1;
+    };
+
+    right = range_period.querySelector("input[type='button'].right");
+    right.onclick = function() {
+        r = range_period.querySelector("input[type='range']");
+        r.value = parseInt(r.value) + 1;
+    };
+
+});

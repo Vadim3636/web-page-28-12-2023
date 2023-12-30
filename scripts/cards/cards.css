@@ -158,9 +158,10 @@ cards ul li article a > span {
 }
 
 cards ul li article a span {
+	text-align: center;
 	font-size: 5vh;
 	font-weight: 80;
-	letter-spacing: 1vh;
+	letter-spacing: 0.7vh;
 	text-transform: uppercase;
 	color: var(--gray-0);
 }

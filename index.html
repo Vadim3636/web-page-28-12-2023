@@ -5,6 +5,8 @@
         <link rel="stylesheet" href="style.css">
         <script src="scripts/script.js" defer></script>
         
+        <link rel="stylesheet" href="styles/range-slider.css">
+
         <script src="scripts/background/background.js" defer></script>
         <link rel="stylesheet" href="scripts/background/background.css">
         
@@ -12,7 +14,20 @@
     </head>
 
     <body>
-        <input id="brightness" type="range" min="0" max="255">
+        <hr><h1>Brightness:</h1>
+        <div class="range brightness">
+            <input type="button" class="left" value="-">
+            <input id="range" name="range" type="range" min="0" max="100" value="70"/>
+            <input type="button" class="right" value="+">
+        </div><hr>
+        
+        <hr><h1>Period:</h1>
+        <div class="range period">
+            <input type="button" class="left" value="-">
+            <input id="range" name="range" type="range" min="0" max="100" value="70"/>
+            <input type="button" class="right" value="+">
+        </div><hr>
+
         <div id="bg-container" aria-hidden="true"></div>
         <cards></cards>
         s<br>s<br>s
