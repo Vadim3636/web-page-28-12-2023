@@ -160,10 +160,12 @@ cards ul li article a > span {
 cards ul li article a span {
 	text-align: center;
 	
-    font-family: 'Rubik Maps';
+    font-family: 'Kanit';
 	font-size: 4vh;
 	font-weight: 80;
 	letter-spacing: 0.3vh;
+
+	line-height: 4vh;
 	
 	text-transform: uppercase;
 	color: var(--gray-0);
