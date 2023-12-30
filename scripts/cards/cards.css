@@ -13,7 +13,7 @@
 *{
 	--card-height: 45vh;
     --card-size: calc(var(--card-height)/4*3);
-    --height: calc(var(--card-height) + 5vh);
+    --height: calc(var(--card-height) + 0vh);
 }
 
 cards {

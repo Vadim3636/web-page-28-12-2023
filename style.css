@@ -12,10 +12,9 @@ html{
 }
 
 body{
-    /* display: grid; */
-    /* display: block; */
-    /* flex-wrap: wrap; */
-    /* display:flexbox; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #bg-container{
