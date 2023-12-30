@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
 *{
     color: #fff;
 }
@@ -6,6 +9,11 @@ html{
     display: flex;
     justify-content: center;
 }
+
+/* body{
+    display: grid;
+    justify-content: сутеук;
+} */
 
 #brightness{
     margin-left: 5%;
@@ -45,8 +53,29 @@ cards ul{
 }
 
 h1{
+    color: hsl(350, 50%, 75%);
+
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Rubik Doodle Shadow';
     font-size: 5vh;
+    
     text-align: center;
+}
+
+h1 img{
+    color: hsl(350, 50%, 75%);
+    width: max-content;
+    height: 50px;
+    filter:
+    /* invert(100%) */
+    /* brightness(0) */
+    opacity(100%)
+    drop-shadow(-1px -1px 10px hsl(350, 50%, 75%))
+    /* drop-shadow(-1px 1px 10px hsl(350, 50%, 75%))
+    drop-shadow(1px -1px 10px hsl(350, 50%, 75%)) */
+    drop-shadow(1px 1px 10px hsl(350, 50%, 75%));
 }
 
 hr{

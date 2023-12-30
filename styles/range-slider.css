@@ -34,10 +34,10 @@
     /*slider-thumb border color*/
       border: 1px solid hsl(335, 100%, 65%);
     /*Colors*/
-      box-shadow: -50rem 0 5rem 20rem hsl(6, 97%, 71%),
-                  -40rem 0 5rem 30rem hsl(6, 100%, 80%),
-                  -30rem 0 2rem 25rem hsl(346, 99%, 69%),
-                  -25.5rem 0 0 25rem  hsl(335, 100%, 65%);
+      box-shadow: -50rem 0 5rem 20rem hsl(6, 50%, 71%),
+                  -40rem 0 5rem 30rem hsl(6, 50%, 80%),
+                  -30rem 0 2rem 25rem hsl(346, 50%, 69%),
+                  -25.5rem 0 0 25rem  hsl(335, 50%, 65%);
   }
   
   .range input[type="button"] {
@@ -48,13 +48,13 @@
     top: 0.6vh;
     width: 1.8vh;
     height: 1.8vh;
-    background: hsl(6, 97%, 71%);
+    background: hsl(6, 50%, 71%);
 
     border-radius: 50% 0% 0% 50%;
   }
   
   .range input[type="button"].right{
-    background: hsl(335, 100%, 65%);
+    background: hsl(335, 50%, 65%);
     
     border-radius: 0% 50% 50% 0%;
   }

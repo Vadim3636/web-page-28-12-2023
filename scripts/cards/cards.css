@@ -11,8 +11,8 @@
 }
 
 *{
-    --card-size: 30vh;
-    --height: 50vh;
+    --card-size: 25vh;
+    --height: 35vh;
 }
 
 cards {
@@ -159,9 +159,12 @@ cards ul li article a > span {
 
 cards ul li article a span {
 	text-align: center;
-	font-size: 5vh;
+	
+    font-family: 'Rubik Maps';
+	font-size: 4vh;
 	font-weight: 80;
-	letter-spacing: 0.7vh;
+	letter-spacing: 0.3vh;
+	
 	text-transform: uppercase;
 	color: var(--gray-0);
 }
