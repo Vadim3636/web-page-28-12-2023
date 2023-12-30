@@ -4,6 +4,7 @@ var fulldata = {};
 
 var LOCK = false;
 var LOCK_when = Date.now();
+var post_path = "/uodate-strip" // /update-strip
 
 function isEmpty(obj) {
     return Object.keys(obj).length === 0;
@@ -22,7 +23,7 @@ function sendData()
         LOCK_when = Date.now();
         // console.log("lock" + JSON.stringify(fulldata));
         let xhr = new XMLHttpRequest();
-        xhr.open("POST", "/");
+        xhr.open("POST", post_path);
         xhr.setRequestHeader("Accept", "application/json");
         xhr.setRequestHeader("Content-Type", "application/json");
         
