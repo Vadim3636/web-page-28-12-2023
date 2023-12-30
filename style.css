@@ -2,10 +2,15 @@
     color: #fff;
 }
 
+html{
+    display: flex;
+    justify-content: center;
+}
+
 #brightness{
-    margin-left: 5vw;
-    margin-top: 5vh;
-    width: 90vw;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 90%;
 }
 
 #bg-container{
@@ -14,4 +19,27 @@
     z-index: -1;
     opacity: 1;
     /* overflow: hidden; */
+}
+
+@media (aspect-ratio > 9/16) {
+    *{
+        color: #f0f;
+    }
+    body{
+        width: 56.25vh;
+        /* background: #fff; */
+        border: 1px solid white;
+        overflow: hidden;
+    }
+    body{
+        transform: rotate(90);
+    }
+}
+
+cards{
+    overflow: hidden;
+}
+
+cards ul{
+    overflow-x: hidden;
 }
