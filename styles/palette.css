@@ -38,9 +38,28 @@ picker_window{
     margin-right: auto;
     /* margin: auto; */
 }
-picker_window #brightness{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    /* margin: auto; */
+
+
+.brightness2{
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 90%;
+    border: none;
+}
+
+.brightness2 input[type="range"]{
+    z-index: 1;
+}
+
+.brightness2 input[type="button"]{
+    top: 0vh;
+    left: 1.2vh;
+    width: 3vh;
+    height: 3vh;
+    /* z-index: -1; */
+    border: 0.6vh solid black;
+}
+
+.brightness2 input.right{
+    left: -1.2vh;
 }

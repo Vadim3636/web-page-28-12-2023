@@ -28,11 +28,20 @@ function updateValues(range_period, enumerator) {
     switch (enumerator) {
         case 0:
             text_element.innerHTML = r.value + "%";
+            // Update second brightness range value:
+            range_periods[2].querySelector("input[type='range']").value = r.value;
+            postData({brightness: r.value});
             break;
     
-        default:
+        case 1:
             text_element.innerHTML = (r.value/10).toFixed(1) + "s";
+            postData({period: r.value/10});
 
+            break;
+        default:
+            // Update first brightness range value:
+            range_periods[0].querySelector("input[type='range']").value = r.value;
+            updateValues(range_periods[0], 0);
             break;
     }
 }

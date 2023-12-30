@@ -20,6 +20,8 @@ document.querySelector(".color-selector img").onclick = function() {
     }, 0);
 }
 
+// document.querySelector(".color-selector img").click();
+
 // I'm using "click" but it works with any event
 document.addEventListener('mousedown', event => {
     if (picker.style.display == "none") return;

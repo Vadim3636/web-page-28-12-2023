@@ -11,10 +11,10 @@
         <link rel="stylesheet" href="styles/range-slider.css">
 
         <!-- Main script -->
-        <script src="scripts/script.js" defer></script>
-        <!-- Post updates script -->
         <script src="scripts/post.js" defer></script>
         <!-- Palette applier -->
+        <script src="scripts/script.js" defer></script>
+        <!-- Post updates script -->
         <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
         <script src="scripts/palette.js" defer></script>
         <link rel="stylesheet" href="styles/palette.css">
@@ -69,7 +69,12 @@
         <div class="picker_window">
             <picker_window>
                 <div id="picker"></div>
-                <input id="brightness" type="range" class="brightness">
+                <!-- <input id="brightness" type="range" class="brightness"> -->
+                <div class="range brightness2">
+                    <input type="button" class="left" value="-">
+                    <input id="range" name="range" type="range" min="0" max="100" value="70"/>
+                    <input type="button" class="right" value="+">
+                </div>
             </picker_window>
         </div>
     </body>
