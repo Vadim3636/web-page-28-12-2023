@@ -1,8 +1,8 @@
 .loading{
     position: fixed;
     display: flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     background: rgb(0, 0, 0);
@@ -11,6 +11,7 @@
 
     transition: .3s;
 }
+
 .three-body {
     --uib-size: 35px;
     --uib-speed: 0.8s;

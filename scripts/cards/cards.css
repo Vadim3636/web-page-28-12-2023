@@ -62,6 +62,8 @@ cards ul li article {
     box-shadow:
     var(--shadow-5),
     0 1px inset white;
+
+	transition: .3s;
 }
 
 cards ul li article::before {
@@ -220,7 +222,7 @@ cards ul li article a span {
     }
     @keyframes colorify {
       50% {
-        filter: grayscale(0);
+        /* filter: grayscale(0); */
       }
     }    
     @keyframes scalify {
@@ -238,4 +240,8 @@ cards ul li article a span {
       }
     }
   }
+}
+
+cards ul li article a span > span{
+	filter: grayscale(0);
 }
