@@ -22,7 +22,7 @@ range_periods.forEach((range_period, enumerator) => {
 });
 
 function updateValues(range_period, enumerator) {
-    console.log("asds");
+    // console.log("asds");
     let text_element = document.querySelectorAll("table tr th h4")[enumerator];
     r = range_period.querySelector("input[type='range']");
     switch (enumerator) {
