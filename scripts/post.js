@@ -5,7 +5,7 @@ var fulldata = {};
 var LOCK = false;
 var LOCK_when = Date.now();
 var post_path = "/update-strip" // /update-strip
-post_path = window.location.href.replace(window.location.pathname, '') + post_path;
+post_path = window.location.href.replace('/index.html', '') + post_path;
 
 function isEmpty(obj) {
     return Object.keys(obj).length === 0;
