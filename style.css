@@ -11,10 +11,12 @@ html{
     justify-content: center;
 }
 
-/* body{
-    display: grid;
-    justify-content: сутеук;
-} */
+body{
+    /* display: grid; */
+    /* display: block; */
+    /* flex-wrap: wrap; */
+    /* display:flexbox; */
+}
 
 #brightness{
     margin-left: 5%;
@@ -68,7 +70,7 @@ h1{
 h1 img{
     color: hsl(350, 50%, 75%);
     width: max-content;
-    height: 50px;
+    height: 7vh;
     filter:
     /* invert(100%) */
     /* brightness(0) */
@@ -91,4 +93,26 @@ table{
 
 th{
     background: transparent;
+}
+
+h4{
+    font-family: 'Segoe UI';
+    font-size: 3.4vh;
+}
+
+.color-selector{
+    display: flex;
+    justify-content: center;;
+    /* background: #fff; */
+}
+.color-selector img{
+    height: 12vh;
+    filter:
+    /* invert(100%) */
+    /* brightness(0) */
+    opacity(100%)
+    drop-shadow(-1px -1px 12px hsl(225, 83%, 60%))
+    /* drop-shadow(-1px 1px 12px hsl(350, 50%, 75%))
+    drop-shadow(1px -1px 12px hsl(350, 50%, 75%)) */
+    drop-shadow(1px 1px 12px hsl(140, 96%, 65%));
 }

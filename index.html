@@ -1,21 +1,37 @@
 <html>
     <head>
-        <title>Web-page</title><meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="scripts/request.js" defer></script>
+        <!-- Title -->
+        <title>Web-page</title>
+        <!-- Force desktop view -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Main style -->
         <link rel="stylesheet" href="style.css">
-        <script src="scripts/script.js" defer></script>
-        
+        <!-- Range slider style -->
         <link rel="stylesheet" href="styles/range-slider.css">
 
+        <!-- Main script -->
+        <script src="scripts/script.js" defer></script>
+        <!-- Palette applier -->
+        <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+        <script src="scripts/palette.js" defer></script>
+        <link rel="stylesheet" href="styles/palette.css">
+        <!-- Requests for files for next imports -->
+        <script src="scripts/request.js" defer></script>
+        
+        <!-- Stars background import -->
         <script src="scripts/background/background.js" defer></script>
         <link rel="stylesheet" href="scripts/background/background.css">
         
+        <!-- Cards import -->
         <script src="scripts/cards/cards.js" defer></script>
     </head>
 
     <body>
+        <!-- Brightness and period block -->
         <table>
             <tr>
+                <!-- Brightness block -->
                 <th>
                     <hr><h1><img src="icons/brightness.png" alt="Brightness"></h1>
                     <div class="range brightness">
@@ -26,6 +42,7 @@
                     <h4>100%</h4>
                 </th>
                 
+                <!-- Period block -->
                 <th>
                     <hr><h1><img src="icons/period.png" alt="Period"></h1>
                     <div class="range period">
@@ -38,8 +55,20 @@
             </tr>
         </table>
 
+        <!-- Stars background container -->
         <div id="bg-container" aria-hidden="true"></div>
+
+        <!-- Cards container -->
         <cards></cards>
         
+        <div class="color-selector"><img src="icons/color.png" alt=""></div>
+        
+        <!-- Popup palette window -->
+        <div class="picker_window">
+            <picker_window>
+                <div id="picker"></div>
+                <input id="brightness" type="range" class="brightness">
+            </picker_window>
+        </div>
     </body>
 </html>
