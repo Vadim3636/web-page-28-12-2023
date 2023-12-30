@@ -7,7 +7,7 @@
     height: 100vh;
     background: rgb(0, 0, 0);
 
-    z-index: 2;
+    z-index: 3;
 
     transition: .3s;
 }

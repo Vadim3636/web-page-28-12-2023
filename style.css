@@ -81,6 +81,7 @@ hr{
 table{
     margin: auto;
     margin-top: 2vh;
+    margin-bottom: 0;
     background: transparent;
 }
 
