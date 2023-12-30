@@ -60,7 +60,7 @@ h1{
     justify-content: center;
 
     font-family: 'Rubik Doodle Shadow';
-    font-size: 5vh;
+    font-size: 3vh;
     
     text-align: center;
 }
@@ -81,4 +81,14 @@ h1 img{
 
 hr{
     margin: 10px;
+}
+
+table{
+    margin: auto;
+    margin-top: 2vh;
+    background: transparent;
+}
+
+th{
+    background: transparent;
 }

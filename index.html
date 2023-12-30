@@ -14,22 +14,32 @@
     </head>
 
     <body>
-        <hr><h1><img src="icons/brightness.png" alt="Brightness"></h1>
-        <div class="range brightness">
-            <input type="button" class="left" value="-">
-            <input id="range" name="range" type="range" min="0" max="100" value="70"/>
-            <input type="button" class="right" value="+">
-        </div><hr>
-        
+        <table>
+            <tr>
+                <th>
+                    <hr><h1><img src="icons/brightness.png" alt="Brightness"></h1>
+                    <div class="range brightness">
+                        <input type="button" class="left" value="-">
+                        <input id="range" name="range" type="range" min="0" max="100" value="70"/>
+                        <input type="button" class="right" value="+">
+                    </div><hr>
+                    <h4>100%</h4>
+                </th>
+                
+                <th>
+                    <hr><h1><img src="icons/period.png" alt="Period"></h1>
+                    <div class="range period">
+                        <input type="button" class="left" value="-">
+                        <input id="range" name="range" type="range" min="0" max="100" value="70"/>
+                        <input type="button" class="right" value="+">
+                    </div><hr>
+                    <h4>3.0s</h4>
+                </th>
+            </tr>
+        </table>
+
         <div id="bg-container" aria-hidden="true"></div>
         <cards></cards>
         
-        <hr><h1>Period:</h1>
-        <div class="range period">
-            <input type="button" class="left" value="-">
-            <input id="range" name="range" type="range" min="0" max="100" value="70"/>
-            <input type="button" class="right" value="+">
-        </div><hr>
-
     </body>
 </html>
