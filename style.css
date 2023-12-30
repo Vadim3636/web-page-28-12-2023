@@ -4,6 +4,7 @@
 
 *{
     color: #fff;
+    user-select: none; /* Standard syntax */
 }
 
 html{
@@ -15,6 +16,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 #bg-container{
@@ -82,11 +84,18 @@ table{
     margin: auto;
     margin-top: 2vh;
     margin-bottom: 0;
+    height: max-content;
     background: transparent;
 }
 
 th{
+    margin: 0;
+    /* padding: 0; */
     background: transparent;
+}
+
+th hr{
+    /* margin: 0; */
 }
 
 h4{
@@ -106,6 +115,7 @@ h4{
     display: flex;
     justify-content: center;;
     /* background: #fff; */
+    margin-bottom: 3vh;
 }
 .color-selector img{
     height: 12vh;
