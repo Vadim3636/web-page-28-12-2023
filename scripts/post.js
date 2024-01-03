@@ -33,15 +33,19 @@ function sendData()
                 // console.log("response: ", xhr.responseText, xhr.status);
                 
                 // console.log("interval...");
+                let delay = 0;
+                if (xhr.status == 404) delay = 1000;
                 setTimeout(function() {if (LOCK && Date.now()-LOCK_when > 500) {LOCK = false}}, 500);
-                setTimeout(sendData, 0);
+                setTimeout(sendData, delay);
+                // console.log("xhr: ", xhr);
+                // console.log(fulldata);
+                if (!xhr.status == 404) fulldata = {};
             }
             // console.log("enable");
         }
         // counter++;
 
         xhr.send(JSON.stringify(fulldata));
-        fulldata = {};
         
     }
 }

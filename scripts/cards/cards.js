@@ -59,6 +59,8 @@ function select_card(index) {
     }
     selected_card = index;
     update_cards_grayscale();
+
+    postData({mode: selected_card});
 }
 
 function update_cards_grayscale() {

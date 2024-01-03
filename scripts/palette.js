@@ -8,6 +8,20 @@ var colorPicker = new iro.ColorPicker('#picker', {
     ]
 });
 
+window.addEventListener("resize", function() {
+    colorPicker.setOptions({width: 0.8*Math.min(document.querySelector('#picker').parentElement.offsetWidth, document.querySelector('#picker').parentElement.offsetHeight)});
+});
+
+colorPicker.on('color:change', function(color) {
+    // if the first color changed
+    if (color.index === 0) {
+        // console.log('color 0 changed!');
+        // log the color index and hex value
+        //   console.log(color.index, color.hexString);
+        postData({r: color.red, g: color.green, b: color.blue});
+    }
+});
+
 var picker = document.querySelector(".picker_window");
 var pickerch = document.querySelector("picker_window");
 picker.style.display = "none";
