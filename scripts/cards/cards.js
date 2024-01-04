@@ -1,6 +1,5 @@
 var hovered_card = 0;
 var selected_card = 0;
-var cards_loaded = false;
 
 async function main() {
     let htmlcontent = await makeRequest("GET", "scripts/cards/cards.html");
@@ -8,8 +7,6 @@ async function main() {
     cards = document.querySelector("cards");
     cards.innerHTML = htmlcontent;
     cards.innerHTML += "<style>" + csscontent + "</style>";
-
-    cards_loaded = true;
 
     let elems = document.querySelectorAll("cards ul li");
     elems[selected_card].querySelector("article").style.filter = "grayscale(0)";

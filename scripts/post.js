@@ -119,7 +119,7 @@ async function postData(data = {})
 }
 
 window.onload = function() {
-    if (cards_loaded == false) {
+    if (document.querySelectorAll(".range").length == 0) {
         setTimeout(window.onload, 1);
         return;
     }
