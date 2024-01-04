@@ -54,6 +54,8 @@ function select_card(index) {
     // console.log("select card");
     let elems = document.querySelectorAll("cards ul li");
     if (index + 1 > elems.length || index < 0) {
+        setTimeout(function() {select_card(0)}, 1);
+        console.log("mode index error: resetting");
         return;
     }
     selected_card = index;
