@@ -22,7 +22,7 @@ async function main() {
             calculate_hovered(elems);
             if (hovered_card != index) hover_card(index);
             else select_card(index);
-            console.log("asdsd", hovered_card, index);
+            // console.log("asdsd", hovered_card, index);
         };
     });
 }
@@ -45,19 +45,20 @@ function calculate_hovered(elems) {
         }
     });
     // console.log(":::::", document.querySelector("cards ul").scrollLeft);
-    console.log("selected index:", i);
+    // console.log("selected index:", i);
     hovered_card = i;
     return hovered_card;
 }
 
 function select_card(index) {
-    console.log("select card");
+    // console.log("select card");
     let elems = document.querySelectorAll("cards ul li");
     if (index + 1 > elems.length || index < 0) {
         console.log("length error");
         return;
     }
     selected_card = index;
+    hover_card(index, true);
     update_cards_grayscale();
 
     postData({mode: selected_card});
