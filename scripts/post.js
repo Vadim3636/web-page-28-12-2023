@@ -11,6 +11,8 @@ var LOCK_when = Date.now();
 rel_path = window.location.href.replace('/index.html', '');
 if (rel_path.slice(-1) == '/') rel_path = rel_path.slice(0, -1);
 
+rel_path = "http://esp32-host.local"
+
 var post_path = "/update-strip" // /update-strip
 post_path = rel_path + post_path;
 
@@ -105,7 +107,6 @@ function getData() {
     
     xhr.send(JSON.stringify(fulldata));
 }
-getData();
 
 async function postData(data = {})
 {
@@ -118,6 +119,7 @@ async function postData(data = {})
 }
 
 window.onload = function() {
-    readyrec = true;
+    getData();
+    // readyrec = true;
     console.log("ready to work");
 }
