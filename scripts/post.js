@@ -119,6 +119,10 @@ async function postData(data = {})
 }
 
 window.onload = function() {
+    if (document.querySelectorAll(".range").length == 0) {
+        setTimeout(window.onload, 1);
+        return;
+    }
     getData();
     // readyrec = true;
     console.log("ready to work");
