@@ -99,6 +99,19 @@ function getData() {
 
                     setTimeout(function() {readyrec = true;}, 0);
 
+                    // load animation stopper
+                    setTimeout(function() {
+                        let loading = document.querySelector(".loading");
+                        loading.style.opacity = 0;
+                
+                        loading.style.transition = "0s";
+                
+                        setTimeout(function() {
+                            loading.style.display = "none";
+                        }, 0);
+                    }, 0);
+                    // end load animation stopper
+
                     // document.querySelectorAll("input#brightness").forEach(element => {element.value = data.brightness*100;});
                 }, 0);
             }
@@ -119,11 +132,12 @@ async function postData(data = {})
 }
 
 window.onload = function() {
-    if (document.querySelectorAll(".range").length == 0) {
+    if (document.querySelectorAll("cards ul li").length == 0) {
         setTimeout(window.onload, 1);
         return;
     }
     getData();
+
     // readyrec = true;
     console.log("ready to work");
 }
