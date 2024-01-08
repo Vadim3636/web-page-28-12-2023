@@ -11,7 +11,7 @@ var LOCK_when = Date.now();
 rel_path = window.location.href.replace('/index.html', '');
 if (rel_path.slice(-1) == '/') rel_path = rel_path.slice(0, -1);
 
-rel_path = "http://esp32-host.local"
+// rel_path = "http://esp32-host.local"
 
 var post_path = "/update-strip" // /update-strip
 post_path = rel_path + post_path;
@@ -100,20 +100,14 @@ function getData() {
                     setTimeout(function() {readyrec = true;}, 0);
 
                     // load animation stopper
-                    setTimeout(function() {
-                        let loading = document.querySelector(".loading");
-                        loading.style.opacity = 0;
-                
-                        loading.style.transition = "0s";
-                
-                        setTimeout(function() {
-                            loading.style.display = "none";
-                        }, 0);
-                    }, 0);
+                    stopLoadingAnim();
                     // end load animation stopper
 
                     // document.querySelectorAll("input#brightness").forEach(element => {element.value = data.brightness*100;});
                 }, 0);
+            }
+            else {
+                stopLoadingAnim();
             }
         }
     }
@@ -129,6 +123,20 @@ async function postData(data = {})
         fulldata[key] = data[key];
     }
     
+}
+
+function stopLoadingAnim() {
+    setTimeout(function() {
+        let loading = document.querySelector(".loading");
+        loading.style.opacity = 0;
+
+        loading.style.transition = "0s";
+
+        setTimeout(function() {
+            loading.style.display = "none";
+        }, 0);
+    }, 0);
+    console.log("anim stopped");
 }
 
 window.onload = function() {
